@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+     <meta charset="utf-8">
+  
+<style>
+.articles {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.news {
+	width: 300px;
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid lightgrey;
+}
+
+img {
+	max-width: 300px;
+}
+a{
+    font: sans-serif;
+}
+</style>
+</head>
+<body>
+    
+    
+        <div class="section layout_padding padding_top_0">
+        <div class="container">
+            <div class="row" id="news_layout">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+                            <h2><span class="theme_color"></span>News Feed</h2>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="articles"></div>
+                </div>
+             </div>
+        </div>
+    
+
+<!--<div class="articles"></div>-->
+
+ <script>
+var url = 'http://newsapi.org/v2//everything?' +
+          'q=Bushfire&' +
+          'from=2020-08-25&' +
+          'sortBy=au&' +
+          'apiKey=0a37053a4b884c5fa20be05ca39c95f2';
+  
+<!--943ddea42eb44ff8a147c28a2425e0c1';-->
+
+<!--0a37053a4b884c5fa20be05ca39c95f2-->
+
+var req = new Request(url);
+
+fetch(req)
+    .then(function(response) {
+        console.log(response.json());
+    })
+
+
+const recievedNews = (newsdata) => {
+    const articlesDiv = document.querySelector(".articles")
+    newsdata.articles.forEach((article) => {
+			
+			//Here we create and add html elements to our html file
+      const div = document.createElement("div")
+      div.className = "news"
+      div.innerHTML = `
+			<h2>${article.title}</h2>
+			<img src="${article.urlToImage}"/>`
+                        
+      articlesDiv.appendChild(div)
+			
+    })
+}
+
+//Fetch sends a request to the API.
+//Promise makes it possible to run this in the background. När vi får APIet då går den vidare och skickar tillbaka JSON.
+fetch(url)
+  .then(response => response.json())
+  .then(recievedNews)
+
+</script>
+</body> 
+ </html>
