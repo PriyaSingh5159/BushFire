@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Australian Capital Territory</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="../css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/custom.css" />
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,600i&display=swap" rel="stylesheet">
+<!--
+
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+-->
+<style>
+    .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+    </style>
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="../images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+
+   <!-- Start header -->
+    <header class="top-header">
+        <div class="header_top">
+            
+            <div class="container" >
+                <div class="row">
+                    <div class="logo_section">
+                        <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="image"></a>
+                        <a class="navbar-brand" href="../index.html"><strong>Emergency Management</strong></a>
+                    </div>
+                    <div class="site_information">
+                        <ul>
+                            <li><a href="mailto:email@gmail.com"><img src="../images/mail_icon.png" alt="#" />bushfiremanagement@gmail.com</a></li>
+                            <li><a href="tel:email@gmail.com"><img src="../images/phone_icon.png" alt="#" />000</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    
+   <nav class="navbar navbar-expand-lg navbar-light" id="nav-section" style="background:#ff880e">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recovery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="../responseplan.php">Response Plan</a>
+          <a class="dropdown-item" href="recoveryassistance.html">Recovery Assistance</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+        </div>
+      </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Reports
+              </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Bushfire_by_state.html">Bushfire Effects by States</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Bushfire_and_weather.html">Bushfire and Weather Conditions</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Compare_Bushfire_by_state.html">Compare Bushfire by State</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="Daily_Affected_Suburbs.html"> Daily Affected Suburbs</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Daily_Bushfire_Count.html"> Daily Bushfire Count</a>
+          <div class="dropdown-divider"></div>
+              </div>
+            </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="predictions.html">Prediction</a>
+      </li>
+      
+      
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About Us
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="team_1.php">Team Members</a>
+          <a class="dropdown-item" href="about.php">About Project</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sign Up
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="login.html">Login</a>
+          <a class="dropdown-item" href="login.html">Register</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+        </div>
+      </li>
+          </ul>
+      </div>
+</nav>
+ </header>
+<!-- End header -->
+  
+    
+   <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <div class="heading_main text_align_left">
+                                        
+            </div>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+            </a>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                            <strong>Alerts & Warnings</strong></div>
+                            <h1 style="font-size:20px; padding-top:50px; padding-left: 10px; color: black; align-content:center; ">
+                            <strong>esa.act.gov.au</strong></h1>
+                    </div>
+                    <div class="col-auto">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                            <strong>Emergency Assistance</strong></div>
+                      <h1 style="font-size:50px; padding-top:40px; padding-left: 10px; color: black; align-content:center; ">
+                            <strong>132-500</strong></h1>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                            <strong>Emergency Information</strong></div>
+                        <h1 style="font-size:40px; padding-top:40px; padding-left: 10px; color: black; align-content:center; ">
+                            <strong>6207 8370</strong></h1>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          
+                        </div>
+                        <div class="col">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pending Requests Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                            <strong>Fire Information</strong></div>
+                        <h1 style="font-size:50px; padding-top:40px; padding-left: 80px; color: black; align-content:center; "><strong>000</strong></h1>
+                    </div>
+                    <div class="col-auto">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Row -->
+          
+     
+          
+          
+<!--Western Australia Detail Section-->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 layout_padding">
+                     <div class="full paddding_left_15">
+                         
+                      </div>
+                    <div class="heading_main text_align_left">
+                    <img src="https://globalgrapevine.co.uk/wp-content/uploads/2016/02/ACT-Map_Detailed_Orange-01.jpg" style="height: 650px; width:700px;" align="left">
+                </div>
+                </div>
+                <div class="col-md-6 layout_padding">
+                    <div class="full paddding_left_15">
+                        <div class="heading_main text_align_left">
+                            <h2><span class="theme_color"><strong>Australian Capital Territory</strong></h2>    
+                        </div>
+                        <p style="color: #000;"><strong>ACT Emergency Services Agency (ESA) stated that the Orroral Valley fire was approximately 86,562 hectares in size.
+In the Australian Capital Territory (ACT), the national capital Canberra was blanketed by thick bushfire smoke on New Year's Day from bushfires burning nearby in New South Wales. That day the air quality in the capital was the worst of any city in the world, at around 23 times the threshold to be considered hazardous. Conditions continued the next day, and Australia Post stopped postal deliveries in the ACT to keep workers safe from smoke.
+From at least 6 January 2020 a bushfire near Hospital Hill in the Namadgi National Park had started; it was extinguished on 9 January. 
+ </strong> 
+                        </p>
+                       
+                    <div class="full paddding_left_15">                      
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Western Australia Detail section end -->
+
+
+<!--Card Layout-->
+
+<div class="cards-list">
+  
+<div class="card 1">
+    <div class="card_image"> 
+         <h1 style="font-size:100px; padding-top:80px; padding-left: 100px; color: orange; align-content:center; ">
+             <strong>1</strong></h1>
+    </div>
+    <div class="card_title title-white">
+      <h1>Total Human Deaths</h1>
+    </div>
+</div>
+
+  <div class="card 2">
+    <div class="card_image"> 
+         <h1 style="font-size:100px; padding-top:80px; padding-left: 100px; color: orange; align-content:center; ">
+             <strong>0</strong></h1>
+    </div>
+    <div class="card_title title-white">
+      <h1>Homes Lost</h1>
+    </div>
+</div>
+
+<div class="card 3">
+    <div class="card_image"> 
+         <h1 style="font-size:100px; padding-top:80px; padding-left: 80px; color: orange; align-content:center; ">
+             <strong>40</strong></h1>
+    </div>
+    <div class="card_title title-white">
+      <h1>Forest Burnt (hecter)</h1>
+    </div>
+</div>
+  
+  <div class="card 4">
+    <div class="card_image"> 
+         <h1 style="font-size:100px; padding-top:80px; padding-left: 80px; color: orange; align-content:center; ">
+             <strong>75</strong></h1>
+    </div>
+    <div class="card_title title-white">
+      <h1>Number of Days</h1>
+    </div>
+  </div>
+
+</div>
+<!--Card layout-->
+          
+    <!--Map-->
+
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-12 white_fonts">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <img class="img-responsive" src="../images/logo.png" alt="logo" style="width: 50px; height: 50px;" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="full">
+                                <ul class="menu_footer">
+                                    <li><a href="../pages/home.html">> Home</a></li>
+                                    <li><a href="../pages/about.html">> About</a></li>
+                                    <li><a href="#news_layout">> News</a></li>
+                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                            
+                             
+                            
+                         </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="full">
+                                <div class="footer_blog full white_fonts">
+                             <h3>Contact us</h3>
+                             <ul class="full">
+                               <li><img src="../images/i5.png"><span> Victoria<br>Australia</span></li>
+                               <li><img src="../images/i6.png"><span>bushfiremanagement@gmail.com</span></li>
+                               <li><img src="../images/i7.png"><span>000</span></li>
+                             </ul>
+                         </div>
+                            </div>
+                        </div>
+					</div>
+                </div>
+			 </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="footer-nail"> © 2020 All rights reserved. This website is strictly for educational purpose and must not be used in case of an emergency. Please refer to official government websites in an emergency.</p>
+         
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+   <!-- <a href="#" id="scroll-to-top" class="hvr-radial-out">^</a>-->
+
+    <!-- ALL JS FILES -->
+    <script src="../js/jquery.min.js"></script>
+	<script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/jquery.pogo-slider.min.js"></script>
+    <script src="../js/slider-index.js"></script>
+    <script src="../js/smoothscroll.js"></script>
+    <script src="../js/form-validator.min.js"></script>
+    <script src="../js/contact-form-script.js"></script>
+    <script src="../js/isotope.min.js"></script>
+    <script src="../js/images-loded.min.js"></script> 
+    <script src="../js/custom.js"></script>
+  
+         
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU6bsx-PLT5fW02T5GeiwA8cOOY7l2rU4&libraries=places&callback=initialize" async defer></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+ 
+ <script>
+   $(document).ready(function(){
+        // type_holder
+        // <div><label><input type="checkbox" class="types" value="mosque" />Mosque</label></div>
+
+        var types = ['fire_station'];
+        var html = '';
+
+        $.each(types, function( index, value ) {
+            var name = value.replace(/_/g, " ");
+            html += '<div><label><input type="checkbox" class="types" value="'+ value +'" />'+ capitalizeFirstLetter(name) +'</label></div>';
+        });
+
+        $('#type_holder').html(html);
+    });
+
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    var map;
+    var infowindow;
+    var autocomplete;
+    var countryRestrict = {'country': 'in'};
+    var selectedTypes = [];
+
+    function initialize()
+    {
+        autocomplete = new google.maps.places.Autocomplete((document.getElementById('address')), {
+            types: ['(regions)'],
+           // componentRestrictions: countryRestrict
+        });
+
+        var pyrmont = new google.maps.LatLng(52.5666644, 4.7333304);
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: pyrmont,
+            zoom: 12
+        });
+    }
+
+    function renderMap()
+    {
+        // Get the user defined values
+        var address = document.getElementById('address').value;
+        var radius  = parseInt(document.getElementById('radius').value) * 1000;
+        
+        // get the selected type
+        selectedTypes = [];
+        $('.types').each(function(){
+            if($(this).is(':checked'))
+            {
+                selectedTypes.push($(this).val());
+            }
+        });
+
+        var geocoder    = new google.maps.Geocoder();
+        var selLocLat   = 0;
+        var selLocLng   = 0;
+
+        geocoder.geocode({'Western Australia': address}, function(results, status) {
+            if (status === 'OK')
+            {
+                //console.log(results[0].geometry.location.lat() + ' - ' + results[0].geometry.location.lng());
+
+                selLocLat   = results[0].geometry.location.lat();
+                selLocLng   = results[0].geometry.location.lng();
+
+                //var pyrmont = new google.maps.LatLng(52.5666644, 4.7333304);
+
+                var pyrmont = new google.maps.LatLng(selLocLat, selLocLng);
+
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: pyrmont,
+                    zoom: 11
+                });
+
+                //console.log(selectedTypes);
+
+                var request = {
+                    location: pyrmont,
+                    //radius: 5000,
+                    //types: ["atm"]
+                    radius: radius,
+                    types: selectedTypes
+                };
+
+                infowindow = new google.maps.InfoWindow();
+
+                var service = new google.maps.places.PlacesService(map);
+                service.nearbySearch(request, callback);
+            }
+            else
+            {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+    }
+
+    function callback(results, status)
+    {
+        if (status == google.maps.places.PlacesServiceStatus.OK)
+        {
+            for (var i = 0; i < results.length; i++)
+            {
+                createMarker(results[i], results[i].icon);
+            }
+        }
+    }
+
+    function createMarker(place, icon) {
+        var placeLoc = place.geometry.location;
+
+        var marker = new google.maps.Marker({
+            map: map,
+            position: place.geometry.location,
+            icon: {
+                url: icon,
+                scaledSize: new google.maps.Size(20, 20) // pixels
+            },
+            animation: google.maps.Animation.DROP
+        });
+        
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.setContent(place.name+ '<br>' +place.vicinity);
+            infowindow.open(map, this);
+        });
+    }
+    </script>
+	
+</body>
+
+</html>
